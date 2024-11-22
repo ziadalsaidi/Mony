@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYG | باقات الاستثمار</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بكم في موقع AYG للاستثمار</h1>
+    </header>
+    <div class="container">
+        <h1>باقات الاستثمار</h1>
+
+        <!-- الباقة الأولى -->
+        <div class="package">
+            <img src="https://via.placeholder.com/900x300?text=%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9+500" alt="باقه 500">
+            <div class="content">
+                <div class="amount">500 جنيه</div>
+                <div class="daily-return">عائد يومي: 125 جنيه</div>
+                <button class="subscribe-button" onclick="openPopup('500 جنيه', '125 جنيه')">اشتراك</button>
+            </div>
+        </div>
+
+        <!-- الباقة الثانية -->
+        <div class="package">
+            <img src="https://via.placeholder.com/900x300?text=%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9+1000" alt="باقه 1000">
+            <div class="content">
+                <div class="amount">1000 جنيه</div>
+                <div class="daily-return">عائد يومي: 270 جنيه</div>
+                <button class="subscribe-button" onclick="openPopup('1000 جنيه', '270 جنيه')">اشتراك</button>
+            </div>
+        </div>
+
+        <!-- الباقة الثالثة -->
+        <div class="package">
+            <img src="https://via.placeholder.com/900x300?text=%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9+2500" alt="باقه 2500">
+            <div class="content">
+                <div class="amount">2500 جنيه</div>
+                <div class="daily-return">عائد يومي: 620 جنيه</div>
+                <button class="subscribe-button" onclick="openPopup('2500 جنيه', '620 جنيه')">اشتراك</button>
+            </div>
+        </div>
+
+        <!-- الباقة الرابعة -->
+        <div class="package">
+            <img src="https://via.placeholder.com/900x300?text=%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9+5000" alt="باقه 5000">
+            <div class="content">
+                <div class="amount">5000 جنيه</div>
+                <div class="daily-return">عائد يومي: 1370 جنيه</div>
+                <button class="subscribe-button" onclick="openPopup('5000 جنيه', '1370 جنيه')">اشتراك</button>
+            </div>
+        </div>
+
+        <!-- الباقة الخامسة -->
+        <div class="package">
+            <img src="https://via.placeholder.com/900x300?text=%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9+10000" alt="باقه 10000">
+            <div class="content">
+                <div class="amount">10000 جنيه</div>
+                <div class="daily-return">عائد يومي: 2800 جنيه</div>
+                <button class="subscribe-button" onclick="openPopup('10000 جنيه', '2800 جنيه')">اشتراك</button>
+            </div>
+        </div>
+
+        <!-- الباقة السادسة -->
+        <div class="package">
+            <img src="https://via.placeholder.com/900x300?text=%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9+20000" alt="باقه 20000">
+            <div class="content">
+                <div class="amount">20000 جنيه</div>
+                <div class="daily-return">عائد يومي: 6150 جنيه</div>
+                <button class="subscribe-button" onclick="openPopup('20000 جنيه', '6150 جنيه')">اشتراك</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- النافذة المنبثقة -->
+    <div class="popup-overlay" id="paymentPopup">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">إغلاق</button>
+            <h3>طريقة الدفع</h3>
+            <p>رقم محفظة فودافون كاش: <strong>01032092547</strong></p>
+            <p>قيمة الباقة: <span id="packageValue"></span></p>
+            <p>العائد اليومي: <span id="dailyReturn"></span></p>
+            <p>قم بإرفاق صورة التحويل:</p>
+            <input type="file" accept="image/*">
+            <button onclick="alert('تم إرسال بياناتك بنجاح!')">إرسال</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AYG | جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
